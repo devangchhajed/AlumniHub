@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">BIT Connect</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="facebook_app_id">217410248719663</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="action_back">Back</string>
+    <string name="action_share">Share</string>
+    <string name="action_forward">Forward</string>
+    <string name="action_bookmark">Bookmark</string>
+    <string name="two">Coming Soon</string>
+    <string name="three">Coming Soon</string>
+
+    <string name="btn_pinned_top_tabs">Pinned To Top Tabs</string>
+    <string name="title_activity_icon_text_tabs">Icon and Text Tabs</string>
+    <string name="title_activity_icon_tabs">Icon Tabs</string>
+    <string name="btn_custom_icon_tabs">Custom View Icon &amp; Text</string>
+    <string name="title_activity_custom_view_icon_text_tabs">Custom View Icon &amp; Text</string>
+    <string name="title_activity_pinned_top_tabs">Pin Top Tabs</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="abouttext">Developed By : Devang Chhajed\nPowered By : Zuts Developers\nVersion : 1.0 (Beta)</string>
+    <string name="title_activity_browser">BrowserActivity</string>
+
+    <string name="server_client_id">654289210448-873q6tmhanm8m0cpco3lp8i2el8dncnu.apps.googleusercontent.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

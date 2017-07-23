@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/feed_bg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            app:srcCompat="@drawable/icon"
+            android:id="@+id/nh_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <TextView
+            android:text="Welcome to BIT Connect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/nh_icon"
+            android:layout_toEndOf="@+id/nh_icon"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:id="@+id/nh_textview"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-condensed" />
+    </LinearLayout>
+</LinearLayout>

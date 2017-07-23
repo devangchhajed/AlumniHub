@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/feed_base"
+    android:background="@color/feed_bg"
+    android:orientation="vertical">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/fdn_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="60dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/dn_comments_list"
+                    android:background="@color/white"
+                    android:layout_weight="3.51"
+                    android:scrollbars="none"
+                    android:headerDividersEnabled="false"></ListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/post_update_action_bar"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tint="@color/black"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+            android:id="@+id/detailactivityclose"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#00000000" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/white"
+        android:layout_height="60dp">
+        <View
+            android:layout_width="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:layout_toLeftOf="@+id/postcomment"
+    android:layout_marginRight="10dp"
+    android:layout_toStartOf="@+id/postcomment"
+    android:id="@+id/newcomment" />
+
+            <Button
+                android:text="Comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/postcomment"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_upload_submit"
+                android:textColor="@color/white"
+                android:textColorLink="@android:color/transparent"
+                android:layout_weight="1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:id="@+id/fdn_progressbar"
+        android:layout_marginTop="200dp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

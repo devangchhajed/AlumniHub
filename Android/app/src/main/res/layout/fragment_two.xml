@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greybg"
+    tools:context="zuts.bit.connect.Activities.HomeActivity.FragmentTwo.TwoFragment">
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/f2progress"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/emptyList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="No Records, Contact Administrator"
+        android:visibility="gone"
+        android:textSize="25sp" />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_two_swipe_refresh"
+        android:layout_above="@+id/paperupload">
+
+
+    <ListView
+        android:id="@+id/subjectlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/paperupload"></ListView>
+</android.support.v4.widget.SwipeRefreshLayout>
+
+    <Button
+        android:text="Upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/paperupload"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "772723305482",
+    "firebase_url": "https://zuts-bit-connect.firebaseio.com",
+    "project_id": "zuts-bit-connect",
+    "storage_bucket": "zuts-bit-connect.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772723305482:android:92a17daa0df1bb69",
+        "android_client_info": {
+          "package_name": "zuts.bit.connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "772723305482-bnpn6c7f4uc5135g5etda3523goe7avm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "zuts.bit.connect",
+            "certificate_hash": "1208D9F91F7E5A7F96099663D413A873EED219C6"
+          }
+        },
+        {
+          "client_id": "772723305482-bklg0v6j6hk657buo0u2e3mlv01mm5ui.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxfy8cTJC7BF5TBC0G6FKm_kLa3wWFqQY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "772723305482-bklg0v6j6hk657buo0u2e3mlv01mm5ui.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

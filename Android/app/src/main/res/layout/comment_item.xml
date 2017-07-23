@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/commentitemlayout"
+        android:layout_height="wrap_content">
+
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/commentprofilePic"
+            android:layout_width="@dimen/feed_item_profile_pic"
+            android:layout_height="@dimen/feed_item_profile_pic"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitCenter"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+        </com.android.volley.toolbox.NetworkImageView>
+
+        <TextView
+            android:id="@+id/commenttime"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Time"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/commentprofilePic"
+            android:id="@+id/commentuser"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/commentprofilePic"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"></RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/commentbody"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/commentuser"
+            android:layout_toLeftOf="@+id/commenttime"
+            android:layout_toRightOf="@+id/commentprofilePic"
+            android:layout_toEndOf="@+id/commentprofilePic" />
+    </RelativeLayout>
+
+
+</LinearLayout>
